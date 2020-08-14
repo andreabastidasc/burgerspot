@@ -1,0 +1,174 @@
+img {
+    width: 100%;
+    height: 100%;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+}
+.navbar-custom {
+    background-color: rgb(12, 12, 12);
+    padding: 0rem 1rem;
+
+    .navbar-collapse {
+        @media (min-width: 992px) {
+            padding-left: 0%;
+        }
+        .nav-item {
+            font-family: 'lato', sans-serif;
+            color: whitesmoke;
+            font-size: 1rem;
+            .nav-link {
+                &,
+                &:visited,
+                &:hover,
+                &:active,
+                &:focus,
+                &:active:hover {
+                 font-style: inherit;
+                 color: inherit;
+                 background-color: transparent;
+                 font-size: inherit;
+                 text-decoration: none;
+                 font-variant: inherit;
+                 font-weight: inherit;
+                 line-height: inherit;
+                 font-family: inherit;
+                 border-radius: inherit;
+                 border: inherit;
+                 outline: inherit;
+                 box-shadow: inherit;
+                 vertical-align: inherit;
+                }
+              
+            }
+        }
+    }
+}
+.header_inicio {
+    background-image: url(../../img/burgeruno.jpg);
+    height: 100vh;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-bakcground-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+}
+.jumbotron {
+    margin-left: 1rem;
+    @media (min-width:992px) {
+        margin-left: 3rem;
+        margin-bottom: 11rem;
+    }
+    .inicio_titulo {
+        font-family: 'lato', sans-serif;
+        font-size: 3.5rem;
+        color: white;
+        font-weight: bolder;
+    }
+    .inicio_subtitulo {
+        font-family: 'lato', sans-serif;
+        font-size: 2rem;
+        color: white;
+        font-weight: normal;
+    }
+    .boton_jumbotron {
+        font-family: 'latos', sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        color: whitesmoke;
+        background-color: red;
+        border-radius: 0;
+        padding: 1rem;
+    }
+}
+.section_productos {
+    background-color: red;
+    font-family: 'latos', sans-serif;
+    color: rgba(199, 195, 195, 0.829);
+    padding: 2rem 3rem 2rem 3rem;
+
+    .productos_nombres {
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .iconos_productos {
+        width: 100px;
+        height: 100px;
+    }
+
+}
+.section_nosotros {
+    background-image: url(../../img/2882936.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-bakcground-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    .icono_burger {
+        width: 60px;
+        margin-top: 1rem;
+        background-color: red;
+    }
+    .section_nosotros_titulo {
+        font-family: 'latos', sans-serif;
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+    }
+    .section_nosotros_parrafo {
+        font-family: 'latos', sans-serif;
+        font-size: 1rem;
+        color: white;
+        font-weight: normal;
+    }
+    .iconos_nosotros {
+        width: 100px;
+        height: 100px;
+    }
+}
+.carousel-inner {
+ @media (min-width: 768px) {
+     max-height: 550px;
+ }
+ .carousel-item {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-bakcground-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+  }
+  #sliderUno {
+      background-image: url(../../img/sara-cervera-xB0Kr0D0C8Y-unsplash.jpg);
+  }
+  #sliderDos {
+      background-image: url(../../img/jonathan-borba-1kA3lACHeqk-unsplash.jpg);
+  }
+  #sliderTres {
+      background-image: url(../../img/pesce-huang-GR4Y5K8gwq8-unsplash.jpg);
+  }
+  .boton_carousel {
+      font-family: 'latos', sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      color: whitesmoke;
+      background-color: red;
+      border-radius: 0;
+      padding: 1rem;
+  }
+}
+
