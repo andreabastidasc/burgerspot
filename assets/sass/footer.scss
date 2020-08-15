@@ -1,0 +1,78 @@
+    /*=-footer-=*/
+    footer {
+        color: #fff;
+        background-color:#222;
+        
+    }
+    footer p {
+        color: #ccc;				
+    }
+    footer a {
+        color: #ccc;				
+    }
+    .social-pet li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .social-pet li a {
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        text-align: center;
+        display: block;
+        line-height: 35px;
+        color: #fff;
+    }
+    .recent-post li {
+        display: block;
+        color: #ccc;
+        margin-bottom: 25px;
+    }
+    .recent-post li label {
+        float: left;
+        border: 2px solid #ccc;
+        padding: 1px 7px;
+        text-align: center;
+    }
+    .recent-post li label span {
+        color: #fff;
+    }
+    footer .input-group-addon {
+        background-color: red;
+        padding: 10px;
+    }
+    ul .f-address {
+        padding-left: 1rem;
+    }
+    .f-address li {
+        list-style: none;
+    }
+    .f-address li i {
+        color: red;
+        font-size: 18px;
+    }
+    .f-address li a {
+        color: #ccc; 
+    }
+    /*=-Copyright-=*/
+    .copyright {
+        background-color: #111;
+        padding: 12px 0;
+        font-size:14px;
+    }
+    .rappi {
+        font-family: 'lobster', cursive;
+        font-size: 2rem;
+        color: orangered !important;
+    }
+    .glovo {
+        font-family: 'Nunito', sans-serif;
+        font-size: 2rem;
+        color: rgb(2, 167, 112) !important;
+    }
+    .pedidosYa {
+        font-family: 'Alata', sans-serif;
+        font-style: italic;
+        font-size: 2rem;
+        color:red !important;
+    }
