@@ -271,23 +271,23 @@ img {
   -o-background-size: cover;
   background-position: center center; }
 
-.jumbotron {
+.jumbotron_uno {
   margin-left: 1rem; }
   @media (min-width: 992px) {
-    .jumbotron {
+    .jumbotron_uno {
       margin-left: 3rem;
       margin-bottom: 11rem; } }
-  .jumbotron .inicio_titulo {
+  .jumbotron_uno .inicio_titulo {
     font-family: 'lato', sans-serif;
     font-size: 3.5rem;
     color: white;
     font-weight: bolder; }
-  .jumbotron .inicio_subtitulo {
+  .jumbotron_uno .inicio_subtitulo {
     font-family: 'lato', sans-serif;
     font-size: 2rem;
     color: white;
     font-weight: normal; }
-  .jumbotron .boton_jumbotron {
+  .jumbotron_uno .boton_jumbotron {
     font-family: 'latos', sans-serif;
     font-size: 1rem;
     font-weight: bold;
@@ -311,30 +311,17 @@ img {
     height: 100px; }
 
 .section_nosotros {
-  background-image: url(../../img/2882936.jpg);
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-bakcground-size: cover;
-  -o-background-size: cover;
-  background-position: center center;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-bottom: 3rem;
-  padding-top: 3rem; }
+  background-color: red;
+  padding: 2rem 3rem 2rem 3rem; }
   .section_nosotros .icono_burger {
     width: 60px;
     margin-top: 1rem;
     background-color: red; }
   .section_nosotros .section_nosotros_titulo {
     font-family: 'latos', sans-serif;
-    font-size: 2rem;
-    color: white;
+    font-size: 1.5rem;
+    color: whitesmoke;
     font-weight: bold; }
-  .section_nosotros .section_nosotros_parrafo {
-    font-family: 'latos', sans-serif;
-    font-size: 1rem;
-    color: white;
-    font-weight: normal; }
   .section_nosotros .iconos_nosotros {
     width: 100px;
     height: 100px; }
@@ -367,3 +354,65 @@ img {
   background-color: red;
   border-radius: 0;
   padding: 1rem; }
+
+.menu {
+  border: solid 4px white;
+  font-family: 'latos', sans-serif;
+  color: white; }
+  .menu .titulo_menu {
+    font-size: 3rem;
+    font-weight: bolder; }
+  .menu .contenido_menu {
+    color: grey;
+    font-size: 1.5rem; }
+  .menu .jumbotron_menu {
+    margin-left: 1rem;
+    padding: 2rem; }
+    @media (min-width: 992px) {
+      .menu .jumbotron_menu {
+        margin-left: 4rem;
+        padding: 4rem 2rem; } }
+  .menu .boton_agregar {
+    font-family: 'latos', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: red;
+    border-radius: 0;
+    padding: 1rem; }
+  .menu .combo {
+    border: solid 4px white;
+    background-image: url(../../img/moritz-kindler-F0uOqX24H44-unsplash.jpg);
+    height: 500px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-bakcground-size: cover;
+    -o-background-size: cover;
+    background-position: center center; }
+  .menu .combo_vegano {
+    border: solid 4px white;
+    background-image: url(../../img/milada-vigerova-liHzUxIOqt8-unsplash.jpg);
+    height: 500px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-bakcground-size: cover;
+    -o-background-size: cover;
+    background-position: center center; }
+  .menu .milkshake {
+    border: solid 4px white;
+    background-image: url(../../img/sara-cervera-L6RfOqJqT8g-unsplash.jpg);
+    height: 500px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-bakcground-size: cover;
+    -o-background-size: cover;
+    background-position: center center; }
+  .menu .fritas {
+    border: solid 4px white;
+    background-image: url(../../img/mehrshad-rajabi-NM92w8oiKn0-unsplash.jpg);
+    height: 500px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-bakcground-size: cover;
+    -o-background-size: cover;
+    background-position: center center; }
