@@ -1,7 +1,9 @@
 /*=-footer-=*/
 footer {
   color: #fff;
-  background-color: #222; }
+  background-color: #222;
+  font-family: 'latos',sans-serif;
+  padding-left: 2rem; }
 
 footer p {
   color: #ccc; }
@@ -118,6 +120,7 @@ img {
 
 .header_inicio {
   background-image: url(../../img/burgeruno.jpg);
+  background-attachment: fixed;
   height: 100vh;
   background-size: cover;
   -webkit-background-size: cover;
@@ -185,6 +188,7 @@ img {
     max-height: 550px; } }
 
 .carousel-inner .carousel-item {
+  background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-bakcground-size: cover;

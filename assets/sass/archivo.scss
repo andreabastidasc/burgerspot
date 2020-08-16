@@ -16,11 +16,13 @@ img {
 .navbar-custom {
     background-color: rgb(12, 12, 12);
     padding: 0rem 1rem;
+    
 
     .navbar-collapse {
         @media (min-width: 992px) {
             padding-left: 0%;
         }
+        
         .nav-item {
             font-family: 'lato', sans-serif;
             color: whitesmoke;
@@ -54,6 +56,7 @@ img {
 }
 .header_inicio {
     background-image: url(../../img/burgeruno.jpg);
+    background-attachment: fixed;
     height: 100vh;
     background-size: cover;
     -webkit-background-size: cover;
@@ -133,6 +136,7 @@ img {
      max-height: 550px;
  }
  .carousel-item {
+    background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-bakcground-size: cover;
