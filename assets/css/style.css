@@ -93,7 +93,8 @@ img {
   background-color: red; }
 
 .navbar-custom {
-  padding: 0rem 1rem; }
+  padding: 0rem 1rem;
+  background-color: black; }
   @media (min-width: 992px) {
     .navbar-custom .navbar-collapse {
       padding-left: 0%; } }
