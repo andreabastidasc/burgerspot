@@ -1,6 +1,6 @@
 let Productos = function (nombre, precio){
   this.nombre=nombre;
-  this.precio=precio;
+  let.precio=precio;
 }
 
 let producto1 = new Productos ('combo burger', 350);
