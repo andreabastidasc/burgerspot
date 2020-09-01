@@ -9,7 +9,17 @@ if (currentDay === 1 || currentDay === 4) {
     console.log (precio);
  });
 }
+let btn = document.getElementsByClassName('boton_agregar');
+btn[0].addEventListener('click', alertAgregar);
+btn[1].addEventListener('click', alertAgregar);
+btn[2].addEventListener('click', alertAgregar);
+btn[3].addEventListener('click', alertAgregar);
+
+function alertAgregar(){
+  alert('Agregado al carrito')
+}
 /*
+
 let Productos = function (nombre, precio){
   this.nombre=nombre;
   let.precio=precio;
