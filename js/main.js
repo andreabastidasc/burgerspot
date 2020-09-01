@@ -5,19 +5,10 @@ let currentDay = date.getDay();
 if (currentDay === 1 || currentDay === 4) {
   combos.forEach(combo => {
     let precio = parseInt (combo.innerHTML)*0.5;
-    combo.innerHTML = `$${precio} Hoy -50%`;
+    combo.innerHTML = `$${precio} (-50%)`;
     console.log (precio);
  });
 }
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if($(this).scrollTop() > 50) { 
-        $('.navbar').removeClass('bg-transparent');
-    } else {
-        $('.navbar').addClass('bg-transparent');
-    }
-  });
-});
 /*
 let Productos = function (nombre, precio){
   this.nombre=nombre;
