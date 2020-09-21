@@ -8,6 +8,36 @@ img {
     padding-left: 0;
     padding-right: 0;
 }
+.modal {
+    font-family: 'lato', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    .modal-content {
+        background-color: black;
+        .modal-title {
+            font-weight: bold;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        .close {
+            color: white;
+        }
+        .btn-primary {
+            background-color: red;
+            border: black;
+        }
+    }
+    .modal-footer {
+        h3 {
+            font-size: 1.5rem;
+            margin-right: 5.5rem !important;
+            @media (min-width: 756px) {
+                margin-right: 13rem !important;
+            }
+        }
+    }
+}
 .logo {
   width: 70px;
   height: 70px;

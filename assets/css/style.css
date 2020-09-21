@@ -87,6 +87,28 @@ img {
   padding-left: 0;
   padding-right: 0; }
 
+.modal {
+  font-family: 'lato', sans-serif;
+  font-weight: bold;
+  color: whitesmoke; }
+  .modal .modal-content {
+    background-color: black; }
+    .modal .modal-content .modal-title {
+      font-weight: bold; }
+    .modal .modal-content h2 {
+      font-weight: bold; }
+    .modal .modal-content .close {
+      color: white; }
+    .modal .modal-content .btn-primary {
+      background-color: red;
+      border: black; }
+  .modal .modal-footer h3 {
+    font-size: 1.5rem;
+    margin-right: 5.5rem !important; }
+    @media (min-width: 756px) {
+      .modal .modal-footer h3 {
+        margin-right: 13rem !important; } }
+
 .logo {
   width: 70px;
   height: 70px;
