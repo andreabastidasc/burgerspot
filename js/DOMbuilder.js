@@ -1,3 +1,5 @@
+let PRODUCTS = [];
+
 $(document).ready(function getData() {
   let dataUrl = './js/data.json';
   $.ajax({
