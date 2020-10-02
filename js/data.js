@@ -1,4 +1,4 @@
-[{
+const PRODUCTS = [{
     "name": "COMBO BURGER + FRITAS",
     "description": "Hamburguesa a elección con papas fritas.",
     "price": 350, 
@@ -30,4 +30,4 @@
     "inCart": 0,
     "class": "milkshake",
     "modal": 4
-}]
+}];

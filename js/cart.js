@@ -1,9 +1,39 @@
-const botones = document.querySelectorAll('.boton_agregar');
+$(document).ready(function(){
+  const botones = $('.agregar_carrito');
+  botones.forEach(boton => {
+    console.log('click');
+  });
+})
+
+/*
 for (let i=0; i < botones.length; i++) {
   botones[i].addEventListener('click', () => {
     cartItems(products[i])
     cartTotal(products[i])
   })
+}
+function setItems (PRODUCTS) {
+  let productsInCart = localStorage.getItem('productsInCart');
+  productsInCart = JSON.parse(productsInCart);
+  
+  if (productsInCart != null) {
+
+    if (productsInCart[product.name] == undefined) {
+      productsInCart = {
+        ...productsInCart, 
+        [product.name]: product
+      }
+    }
+    productsInCart[product.name].inCart += 1;
+
+  } else {
+    product.inCart = 1
+
+    productsInCart = {
+      [product.name]: product 
+    }
+  }
+  localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
 }
 
 function savedCartItems () {
@@ -25,30 +55,6 @@ function cartItems (product) {
     document.getElementById('cartItems').textContent = 1;
   }
   setItems(product);
-}
-
-function setItems (product) {
-  let productsInCart = localStorage.getItem('productsInCart');
-  productsInCart = JSON.parse(productsInCart);
-
-  if (productsInCart != null) {
-
-    if (productsInCart[product.name] == undefined) {
-      productsInCart = {
-        ...productsInCart, 
-        [product.name]: product
-      }
-    }
-    productsInCart[product.name].inCart += 1;
-
-  } else {
-    product.inCart = 1
-
-    productsInCart = {
-      [product.name]: product 
-    }
-  }
-  localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
 }
 
 function savedTotal () {
@@ -73,17 +79,5 @@ function cartTotal (product) {
 }
 
 savedCartItems();
-savedTotal()
-/*
-let combos = document.querySelectorAll('.titulo_precio'); 
-let date = new Date(); 
-let currentDay = date.getDay();
-
-if (currentDay === 1 || currentDay === 3) {
-  combos.forEach(combo => {
-    let precio = parseInt (combo.innerHTML)*0.5;
-    combo.innerHTML = `$${precio} (-50%)`;
-    console.log (precio);
- });
-}
-*/
+savedTotal();
+*/ 
