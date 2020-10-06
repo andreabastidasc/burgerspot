@@ -210,7 +210,7 @@ function renderModals() {
     }
   })
 };
-
+//Crea el HTML del carrito
 function productTable () {
   let cartProducts = localStorage.getItem('productsInCart');
   cartProducts = JSON.parse(cartProducts);

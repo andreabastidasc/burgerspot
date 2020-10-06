@@ -64,14 +64,14 @@ function cartTotal (product) {
     document.getElementById('totalCart').textContent = product.price;
   }  
 }
-
+//Muestra la cantidad de elementos en el HTML
 function savedCartItems () {
   let productAmount = localStorage.getItem('cartItems');
   if (productAmount){ 
     document.getElementById('cartItems').textContent = productAmount;
   }
 }
-
+//Muestra el total en el HTML
 function savedTotal () {
   let myCartTotal = localStorage.getItem('cartTotal');
    if (myCartTotal) {
@@ -79,6 +79,7 @@ function savedTotal () {
     document.getElementById('cart_total').textContent = `${myCartTotal}$`;
    }
 }
+//elimina el elemento del DOM
 function removeProduct(btn) {
   var row = btn.parentNode.parentNode;
   row.parentNode.removeChild(row);
