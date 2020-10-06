@@ -30,6 +30,11 @@ table {
     color: white;
     margin-top: 4rem;
     font-weight: bold; }
+  .cart_container #clear_button {
+    display: inline;
+    color: white;
+    font-weight: bold;
+    background-color: red; }
   .cart_container button {
     background: none;
     border: none; }

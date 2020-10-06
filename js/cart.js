@@ -80,10 +80,15 @@ function savedTotal () {
    }
 }
 //elimina el elemento del DOM
-function removeProduct(btn) {
+function removeProduct(btn, product) {
   var row = btn.parentNode.parentNode;
   row.parentNode.removeChild(row);
 }
+//función para eliminar todo el contenido del carrito
+$('#clear_button').click(function clearStorage(){
+  window.localStorage.clear()
+  location.reload()
+})
 
 savedCartItems();
 savedTotal();
