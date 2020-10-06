@@ -1,3 +1,47 @@
+table {
+  margin: 0 auto !important;
+  background-color: red;
+  border-radius: 2rem;
+  padding: 10px;
+  font-size: 1.5rem; }
+  table tr {
+    padding: 10px;
+    color: white; }
+    table tr th {
+      padding: 10px; }
+    table tr td {
+      padding: 10px; }
+      @media (min-width: 756px) {
+        table tr td {
+          padding: 20px 30px; } }
+
+.cart_container {
+  margin: 0 auto !important;
+  padding: 10rem 2rem;
+  font-family: 'lato', sans-serif; }
+  @media (min-widht: 756px) {
+    .cart_container {
+      padding: 10rem 5rem; } }
+  .cart_container h2 {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3rem; }
+  .cart_container h3 {
+    color: white;
+    margin-top: 4rem;
+    font-weight: bold; }
+  .cart_container button {
+    background: none;
+    border: none; }
+    .cart_container button i {
+      color: white; }
+
+.header_cart {
+  background-color: black; }
+
+.cart {
+  padding: 30px !important; }
+
 /*=-footer-=*/
 footer {
   color: #fff;
@@ -143,11 +187,6 @@ img {
       background-color: red;
       font-family: 'lato', sans-serif;
       font-size: 1rem; }
-      .navbar-custom .navbar-collapse .nav-item .dropdown-menu #clearButton {
-        background-color: black;
-        border-color: black;
-        margin-bottom: 5px;
-        margin-left: 5px; }
       .navbar-custom .navbar-collapse .nav-item .dropdown-menu .totalDropdown {
         color: black !important;
         font-weight: bold; }

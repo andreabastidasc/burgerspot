@@ -1,0 +1,56 @@
+table {
+    margin: 0 auto !important;
+    background-color: red;
+    border-radius: 2rem;
+    padding: 10px;
+    font-size: 1.5rem;
+    tr {
+        padding: 10px;
+        color: white;
+        th {
+            padding: 10px;
+        }
+        td {
+            
+            padding: 10px;
+            @media (min-width: 756px) {
+                padding: 20px 30px;
+            }
+                
+        }
+    
+    }
+    
+}
+.cart_container {
+    margin: 0 auto !important;
+    padding: 10rem 2rem;
+    font-family: 'lato', sans-serif;
+    @media (min-widht: 756px) {
+        padding: 10rem 5rem;
+    }
+    h2 {
+        font-weight: bold;
+        color: white;
+        margin-bottom: 3rem;
+    }
+    h3 {
+        color: white;
+        margin-top: 4rem;
+        font-weight: bold;
+    }
+    button {
+        background: none;
+        border: none;
+        i {
+            color: white;
+        }
+    }
+}
+
+.header_cart {
+    background-color: black;
+}
+.cart {
+    padding: 30px !important;
+}
