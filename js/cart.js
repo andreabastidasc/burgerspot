@@ -1,8 +1,9 @@
+//Listener para llamar a la función que asigna el producto
 $(document).ready(function(){
   addBtn = $('.boton_agregar');
   addBtn.click(assignProduct);
 })
-
+//función que asigna productos
 function assignProduct() {
   const botones = $('.agregar_carrito');
 
@@ -13,9 +14,8 @@ function assignProduct() {
     })
   };
 };
-
+//función para setear los productos en el storage
 function setItems (product) {
-  let productDropdownContainer = document.getElementById('productDropdownContainer');
   let productsInCart = localStorage.getItem('productsInCart');
   productsInCart = JSON.parse(productsInCart);
   
@@ -37,7 +37,7 @@ function setItems (product) {
   }
   localStorage.setItem('productsInCart', JSON.stringify(productsInCart));
 }
-
+//función para setear la cantidad de productos en el storage y en el HTML
 function cartItems (product) {
   let productAmount = localStorage.getItem('cartItems');
   productAmount = parseInt(productAmount);
@@ -51,7 +51,7 @@ function cartItems (product) {
   }
   setItems(product);
 }
-
+//función que sumna al total el producto seleccionado
 function cartTotal (product) {
   let myCartTotal = localStorage.getItem('cartTotal');
 
@@ -79,11 +79,53 @@ function savedTotal () {
     document.getElementById('cart_total').textContent = `${myCartTotal}$`;
    }
 }
-//elimina el elemento del DOM
-function removeProduct(btn, product) {
-  var row = btn.parentNode.parentNode;
-  row.parentNode.removeChild(row);
+//Crea el HTML del carrito
+function productTable () {
+  let cartProducts = localStorage.getItem('productsInCart');
+  cartProducts = JSON.parse(cartProducts);
+  let productContainer = document.getElementById('product_container');
+
+  if (cartProducts) {
+    productContainer.innerHTML = '';
+    Object.values(cartProducts).map(item => {
+      productContainer.innerHTML += 
+      `
+      <tr>
+           <td id="product_table_container">
+           <button class="deleteButton"><i class="far fa-times-circle"></i></button>
+           ${item.name}
+           </td>
+           <td><span class="badge badge-pill badge-dark">${item.inCart}</span></td>
+           <td>${item.price}$</td>
+      </tr>
+      `
+    });
+  }
+  deleteButtons();
 }
+productTable();
+//función para eliminar el HTML de los productos y el storage
+function deleteButtons() {
+  let deleteButtons = document.querySelectorAll('.deleteButton');
+  let productName;
+  let productAmount = localStorage.getItem('cartItems');
+  let cartItems = localStorage.getItem('productsInCart');
+  let cartTotal = localStorage.getItem('cartTotal')
+  cartItems = JSON.parse(cartItems);
+  for (let i=0; i < deleteButtons.length; i++){
+    deleteButtons[i].addEventListener('click', () => {
+      productName = deleteButtons[i].parentElement.textContent.trim();
+      localStorage.setItem('cartItems', productAmount - cartItems[productName].inCart);
+      localStorage.setItem('cartTotal', cartTotal - (cartItems[productName].price * cartItems[productName].inCart));
+
+      delete cartItems[productName];
+      localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+
+      location.reload()
+    })
+  }
+}
+
 //función para eliminar todo el contenido del carrito
 $('#clear_button').click(function clearStorage(){
   window.localStorage.clear()

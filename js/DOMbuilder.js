@@ -210,26 +210,3 @@ function renderModals() {
     }
   })
 };
-//Crea el HTML del carrito
-function productTable () {
-  let cartProducts = localStorage.getItem('productsInCart');
-  cartProducts = JSON.parse(cartProducts);
-  let productContainer = document.getElementById('product_container');
-
-  if (cartProducts) {
-    productContainer.innerHTML = '';
-    Object.values(cartProducts).map(item => {
-      productContainer.innerHTML += 
-      `
-      <tr>
-           <td>${item.name}</td>
-           <td><span class="badge badge-pill badge-dark">${item.inCart}</span></td>
-           <td>${item.price}$</td>
-          <td><button onclick="removeProduct(this)"><i class="far fa-times-circle"></i></button></td>
-      </tr>
-      
-      `
-    });
-  }
-}
-productTable();
